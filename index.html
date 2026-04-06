@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Forge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Function Forge</h1>
+
+    <section class="stats-grid">
+      <div class="stat-box">
+        <span class="stat-label">Total clicks</span>
+        <strong class="stat-value" id="total-clicks">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Gain per click</span>
+        <strong class="stat-value" id="gain-per-click">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">f(x)</span>
+        <strong class="stat-value" id="function-value">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">f'(x)</span>
+        <strong class="stat-value" id="derivative-value">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">x</span>
+        <strong class="stat-value" id="progression-x">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Current function</span>
+        <strong class="stat-value stat-text" id="current-function-name">log(log(x+3))</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Next cost</span>
+        <strong class="stat-value" id="next-function-cost">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Insight</span>
+        <strong class="stat-value" id="insight-count">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Auto / sec</span>
+        <strong class="stat-value" id="auto-rate">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Best run</span>
+        <strong class="stat-value" id="highest-run">0</strong>
+      </div>
+    </section>
+
+    <button id="click-core" class="main-button" type="button">Generate clicks</button>
+
+    <section class="action-row">
+      <button id="upgrade-function-btn" type="button">Buy next function</button>
+      <button id="prestige-btn" type="button">Rebirth</button>
+    </section>
+
+    <div class="message-line" id="status-line">Ready.</div>
+
+    <section class="simple-grid">
+      <section class="panel">
+        <h2>Run</h2>
+        <div class="simple-list">
+          <div><span class="key">Next</span><span id="next-function-name">log(x+1)</span></div>
+          <div><span class="key">Hybrid</span><span id="hybrid-formula">Off</span></div>
+          <div><span class="key">Focus</span><span id="focus-name">Balanced</span></div>
+          <div><span class="key">Rebirth reward</span><span id="prestige-preview">0</span></div>
+          <div><span class="key">Time to next</span><span id="time-to-upgrade">manual only</span></div>
+          <div><span class="key">Lifetime</span><span id="lifetime-clicks">0</span></div>
+          <div><span class="key">Manual clicks</span><span id="manual-clicks">0</span></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Upcoming functions</h2>
+        <div id="function-list" class="button-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Run upgrades</h2>
+        <div id="run-upgrades" class="button-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Permanent upgrades</h2>
+        <div id="prestige-cards" class="button-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Focus</h2>
+        <div id="focus-buttons" class="button-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
