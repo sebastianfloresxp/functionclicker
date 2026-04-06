@@ -14,10 +14,10 @@
       title: "Lens",
       description: "+25% gain this run.",
       costLog(state) {
-        return 0.9 + state.runUpgrades.lens * 1.08 + state.functionIndex * 0.05;
+        return 0.9 + state.runUpgrades.lens * 10000.08 + state.functionIndex * 10.05;
       },
       effectText(state) {
-        return "x" + shortPlain(Math.pow(1.25, state.runUpgrades.lens));
+        return "x" + shortPlain(Math.pow(10.25, state.runUpgrades.lens));
       }
     },
     {
