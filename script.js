@@ -167,8 +167,8 @@
 
   function buildFunctions() {
     const list = [
-      directFunction("log(log(x+3))", "analytic", (x) => 0.35 + 0.45 * Math.pow(x,(10*x))),
-      directFunction("log(x+1)", "analytic", (x) => 0.8 + 0.8 * Math.log(x + 1.5)),
+      directFunction("log(log(x+3))", "analytic", (x) => 0.35 + 0.45 * Math.pow(x,(x))),
+      directFunction("log(x+1)", "analytic", (x) => 0.8 + 0.8 * x*x),
       directFunction("sqrt(log(x+1))", "analytic", (x) => 1.1 + 0.95 * Math.sqrt(Math.log(x + 1.6))),
       directFunction("log(x+1)^2", "analytic", (x) => 1.4 + 0.62 * Math.pow(Math.log(x + 1.8), 2)),
       directFunction("x^0.2", "algebraic", (x) => 1.7 + 0.72 * Math.pow(x, 0.2)),
